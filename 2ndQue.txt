@@ -1,0 +1,27 @@
+
+1)Reverse string 
+const str = 'This is Sunday';
+const reverseSentence = str => {
+   const arr = str.split(" ");
+   const reversed = arr.map(el => {
+      return el.split('').reverse().join("");
+   });
+   return reversed.join(" ");
+};
+console.log(reverseSentence(str));
+
+
+2)sorting of an array in descending order
+const strArr1 = ['a', 'c', 'z', 'f'];
+const descArr = strArr1.sort().reverse();
+console.log(descArr);
+
+
+const strArr2 = ['a', 'c', 'z', 'f'];
+const descArr2 = strArr2.sort((a, b) => (a > b ? -1 : 1));
+console.log(descArr2); 
+
+
+const strArr3 = ['z', 'c', 'a', 'f'];
+const ascArr = strArr3.sort();
+console.log(ascArr);
